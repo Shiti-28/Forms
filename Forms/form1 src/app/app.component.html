@@ -1,0 +1,42 @@
+
+  <div class ="form-group" style="border: 2px solid black;background-color: antiquewhite; text-align: center;">
+
+    <br>
+    <label for="Email"><b>Enter Email</b></label>
+    <input type="text" id="Email" class="form-control" required>
+    <br>
+    <br>
+    <!-- <div class="alert alert-danger" role="alert" *ngIf="!Email.valid && (Email.dirty || Email.touched)">
+      <div class="alert alert-danger" role="alert" *ngIf="Email.errors.required">
+        Email is required
+      </div>
+      <div class="alert alert-danger" role="alert" *ngIf="Email.errors.email">
+        Email is not valid, please enter a valid email
+      </div> -->
+  
+    <label for="Password"><b>Enter Password</b></label>
+    <input type="text" id="Password" class="form-control" required name="Password">
+    <br>
+    <br>
+  
+    <label for="user"><b>Subscriptions</b></label>
+    <select>
+      <option value="Basic">Basic</option>
+      <option value="Advanced">Advanced</option>
+      <option value="Pro">Pro</option>
+  
+    </select>
+  
+     <br>
+     <br>     
+  
+    <button type="submit" (click)="onClickSubmit()"><b>Submit Form</b></button> 
+    <br>
+    <br>
+  
+  
+    
+  </div>
+  
+<br>
+
